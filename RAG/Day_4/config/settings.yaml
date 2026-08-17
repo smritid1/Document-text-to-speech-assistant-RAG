@@ -1,0 +1,15 @@
+chunk_size: 500 
+chunk_overlap: 50 
+
+embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+llm_model: "llama3"
+temperature: 0.3
+
+collection_name: "food.pdf"
+persist_directory: "./chroma_db"
+
+
+bm25_index_path: "./bm25_index.pkl"
+use_hybrid_search: True    # flip to false to compare against pure vector search
+
